@@ -1,0 +1,88 @@
+{"intents": [
+    {"tag": "Default",
+        "patterns": ["default"],
+        "responses": ["Sry I can't understand"],
+        "context_action": false
+    },
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey","hey hi", "Hello", "Hay"],
+     "responses": ["Hello", "Hi", "Hi there"],
+     "context_action": false
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye"],
+     "responses": ["See you later", "Have a nice day", "Bye! Come back again"],
+     "context_action": false
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for help"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"],
+     "context_action": false
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?" ],
+     "responses": ["I'm Rexa", "I'm Rexa, an Artificial Intelligent bot"],
+     "context_action": false
+    },
+    {"tag": "name",
+    "patterns": ["what is your name", "what should I call you", "whats your name?"],
+    "responses": ["You can call me Rexa.", "I'm Rexa!", "Just call me as Rexa"],
+    "context_action": false
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
+    "responses": ["Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"],
+    "context_action": false
+    },
+    {"tag": "complaint",
+    "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
+    "responses": ["Please provide us your complaint in order to assist you", "Please mention your complaint, we will reach you and sorry for any inconvenience caused"],
+    "context_action": false
+    },
+    {"tag": "Thozhan",
+        "patterns": ["How are you?", "what about you?", "How about you?"],
+        "responses": ["I'm fine and you?", "Fine how are you?", "Yeah good"],
+        "context_action": false
+    },
+    {"tag": "appraisal",
+        "patterns": ["Need to know about appraisal", "appraisal", "appraisal policy"],
+        "responses": ["Contact HR to know about appraisal policies", "Contact HR"],
+        "context_action": false
+    },
+    {"tag": "leaves",
+        "patterns": ["How many leaves I am having","my leaves","How many leaves i am having","leaves","leave"],
+        "responses": ["Do you require Cl or PL?","Do you want Casual Leaves(CL) or Privilege Leave (PL) ?"],
+        "context_action": false
+       },
+    {"tag": "casual leave",
+        "patterns": ["How many casual leaves I am having","my casual leaves","my casual leave count","my CL","my cl count","How many cl i am having"],
+        "responses": ["CL"],
+        "context_action": true
+       },
+       {"tag": "paid leave",
+           "patterns": ["How many paid leaves I am having","my paid leaves","my paid leave count","my PL","my pl count","How many pl i am having"],
+           "responses": ["PL"],
+           "context_action": true
+       },
+       {"tag": "name",
+           "patterns": ["my username","my username","my username","username","my name"],
+           "responses": ["username"],
+           "context_action": true
+       },
+       {"tag": "Leave Taken",
+           "patterns": ["How many days I took leave","my leave count", "No of days I took leave","Number of days I took leave","My Leave Taken count"],
+           "responses": ["LT"],
+           "context_action": true
+       },
+       {"tag": "Date of joining",
+           "patterns": ["my date of joining", "my doj", "When i joined ofs","My DOJ","doj"],
+           "responses": ["DOJ"],
+           "context_action": true
+       },
+       {"tag": "Total Leaves",
+           "patterns": ["my Leaves", "my total number of leaves","How many leaves i am having"],
+           "responses": ["TL"],
+           "context_action": true
+       }
+]
+}
